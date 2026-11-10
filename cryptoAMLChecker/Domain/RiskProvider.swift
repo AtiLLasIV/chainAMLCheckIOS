@@ -9,5 +9,5 @@ import Foundation
 
 protocol RiskProvider {
     var name: String { get }
-    func check(address: String, chain: String) async throws -> RiskCheck
+    func check(address: String, chain: Chain) async throws -> RiskCheck
 }
