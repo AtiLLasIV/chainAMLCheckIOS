@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		DDEF8D1230A36B2400CAF0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDEF8CFC30A36B2200CAF0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDEF8D0330A36B2200CAF0C0;
+			remoteInfo = cryptoAMLChecker;
+		};
+		DDEF8D1C30A36B2400CAF0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDEF8CFC30A36B2200CAF0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDEF8D0330A36B2200CAF0C0;
+			remoteInfo = cryptoAMLChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDEF8D0430A36B2200CAF0C0 /* cryptoAMLChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptoAMLChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEF8D1130A36B2400CAF0C0 /* cryptoAMLCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptoAMLCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEF8D1B30A36B2400CAF0C0 /* cryptoAMLCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptoAMLCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DDEF8D0630A36B2200CAF0C0 /* cryptoAMLChecker */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = cryptoAMLChecker;
+			sourceTree = "<group>";
+		};
+		DDEF8D1430A36B2400CAF0C0 /* cryptoAMLCheckerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = cryptoAMLCheckerTests;
+			sourceTree = "<group>";
+		};
+		DDEF8D1E30A36B2400CAF0C0 /* cryptoAMLCheckerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = cryptoAMLCheckerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDEF8D0130A36B2200CAF0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDEF8D0E30A36B2400CAF0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDEF8D1830A36B2400CAF0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDEF8CFB30A36B2200CAF0C0 = {
+			isa = PBXGroup;
+			children = (
+				DDEF8D0630A36B2200CAF0C0 /* cryptoAMLChecker */,
+				DDEF8D1430A36B2400CAF0C0 /* cryptoAMLCheckerTests */,
+				DDEF8D1E30A36B2400CAF0C0 /* cryptoAMLCheckerUITests */,
+				DDEF8D0530A36B2200CAF0C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDEF8D0530A36B2200CAF0C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF8D0430A36B2200CAF0C0 /* cryptoAMLChecker.app */,
+				DDEF8D1130A36B2400CAF0C0 /* cryptoAMLCheckerTests.xctest */,
+				DDEF8D1B30A36B2400CAF0C0 /* cryptoAMLCheckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDEF8D0330A36B2200CAF0C0 /* cryptoAMLChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDEF8D2530A36B2400CAF0C0 /* Build configuration list for PBXNativeTarget "cryptoAMLChecker" */;
+			buildPhases = (
+				DDEF8D0030A36B2200CAF0C0 /* Sources */,
+				DDEF8D0130A36B2200CAF0C0 /* Frameworks */,
+				DDEF8D0230A36B2200CAF0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DDEF8D0630A36B2200CAF0C0 /* cryptoAMLChecker */,
+			);
+			name = cryptoAMLChecker;
+			packageProductDependencies = (
+			);
+			productName = cryptoAMLChecker;
+			productReference = DDEF8D0430A36B2200CAF0C0 /* cryptoAMLChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDEF8D1030A36B2400CAF0C0 /* cryptoAMLCheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDEF8D2830A36B2400CAF0C0 /* Build configuration list for PBXNativeTarget "cryptoAMLCheckerTests" */;
+			buildPhases = (
+				DDEF8D0D30A36B2400CAF0C0 /* Sources */,
+				DDEF8D0E30A36B2400CAF0C0 /* Frameworks */,
+				DDEF8D0F30A36B2400CAF0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDEF8D1330A36B2400CAF0C0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DDEF8D1430A36B2400CAF0C0 /* cryptoAMLCheckerTests */,
+			);
+			name = cryptoAMLCheckerTests;
+			packageProductDependencies = (
+			);
+			productName = cryptoAMLCheckerTests;
+			productReference = DDEF8D1130A36B2400CAF0C0 /* cryptoAMLCheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDEF8D1A30A36B2400CAF0C0 /* cryptoAMLCheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDEF8D2B30A36B2400CAF0C0 /* Build configuration list for PBXNativeTarget "cryptoAMLCheckerUITests" */;
+			buildPhases = (
+				DDEF8D1730A36B2400CAF0C0 /* Sources */,
+				DDEF8D1830A36B2400CAF0C0 /* Frameworks */,
+				DDEF8D1930A36B2400CAF0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDEF8D1D30A36B2400CAF0C0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DDEF8D1E30A36B2400CAF0C0 /* cryptoAMLCheckerUITests */,
+			);
+			name = cryptoAMLCheckerUITests;
+			packageProductDependencies = (
+			);
+			productName = cryptoAMLCheckerUITests;
+			productReference = DDEF8D1B30A36B2400CAF0C0 /* cryptoAMLCheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDEF8CFC30A36B2200CAF0C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					DDEF8D0330A36B2200CAF0C0 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					DDEF8D1030A36B2400CAF0C0 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = DDEF8D0330A36B2200CAF0C0;
+					};
+					DDEF8D1A30A36B2400CAF0C0 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = DDEF8D0330A36B2200CAF0C0;
+					};
+				};
+			};
+			buildConfigurationList = DDEF8CFF30A36B2200CAF0C0 /* Build configuration list for PBXProject "cryptoAMLChecker" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDEF8CFB30A36B2200CAF0C0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DDEF8D0530A36B2200CAF0C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDEF8D0330A36B2200CAF0C0 /* cryptoAMLChecker */,
+				DDEF8D1030A36B2400CAF0C0 /* cryptoAMLCheckerTests */,
+				DDEF8D1A30A36B2400CAF0C0 /* cryptoAMLCheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDEF8D0230A36B2200CAF0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDEF8D0F30A36B2400CAF0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDEF8D1930A36B2400CAF0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDEF8D0030A36B2200CAF0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDEF8D0D30A36B2400CAF0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDEF8D1730A36B2400CAF0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDEF8D1330A36B2400CAF0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDEF8D0330A36B2200CAF0C0 /* cryptoAMLChecker */;
+			targetProxy = DDEF8D1230A36B2400CAF0C0 /* PBXContainerItemProxy */;
+		};
+		DDEF8D1D30A36B2400CAF0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDEF8D0330A36B2200CAF0C0 /* cryptoAMLChecker */;
+			targetProxy = DDEF8D1C30A36B2400CAF0C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDEF8D2330A36B2400CAF0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDEF8D2430A36B2400CAF0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDEF8D2630A36B2400CAF0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soroko.cryptoAMLChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDEF8D2730A36B2400CAF0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soroko.cryptoAMLChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDEF8D2930A36B2400CAF0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soroko.cryptoAMLCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cryptoAMLChecker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cryptoAMLChecker";
+			};
+			name = Debug;
+		};
+		DDEF8D2A30A36B2400CAF0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soroko.cryptoAMLCheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cryptoAMLChecker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cryptoAMLChecker";
+			};
+			name = Release;
+		};
+		DDEF8D2C30A36B2400CAF0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soroko.cryptoAMLCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cryptoAMLChecker;
+			};
+			name = Debug;
+		};
+		DDEF8D2D30A36B2400CAF0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soroko.cryptoAMLCheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cryptoAMLChecker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDEF8CFF30A36B2200CAF0C0 /* Build configuration list for PBXProject "cryptoAMLChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEF8D2330A36B2400CAF0C0 /* Debug */,
+				DDEF8D2430A36B2400CAF0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDEF8D2530A36B2400CAF0C0 /* Build configuration list for PBXNativeTarget "cryptoAMLChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEF8D2630A36B2400CAF0C0 /* Debug */,
+				DDEF8D2730A36B2400CAF0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDEF8D2830A36B2400CAF0C0 /* Build configuration list for PBXNativeTarget "cryptoAMLCheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEF8D2930A36B2400CAF0C0 /* Debug */,
+				DDEF8D2A30A36B2400CAF0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDEF8D2B30A36B2400CAF0C0 /* Build configuration list for PBXNativeTarget "cryptoAMLCheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEF8D2C30A36B2400CAF0C0 /* Debug */,
+				DDEF8D2D30A36B2400CAF0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDEF8CFC30A36B2200CAF0C0 /* Project object */;
+}
