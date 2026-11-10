@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct cryptoAMLCheckerApp: App {
+struct СryptoAMLCheckerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
