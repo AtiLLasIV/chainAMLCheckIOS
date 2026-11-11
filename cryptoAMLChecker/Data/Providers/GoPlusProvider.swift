@@ -1,10 +1,3 @@
-//
-//  GoPlusProvider.swift
-//  cryptoAMLChecker
-//
-//  Created by Артём Сороко on 10.11.26.
-//
-
 import Foundation
 
 struct GoPlusProvider: RiskProvider {
@@ -54,9 +47,7 @@ struct GoPlusProvider: RiskProvider {
         }
         
         flags.sort { $0.level > $1.level }
-        
-        let source = result["data_source"]?.text
-        return RiskCheck(flags: flags, dataSource: (source?.isEmpty ?? true) ? nil : source)
+        return RiskCheck(flags: flags)
     }
 }
 
