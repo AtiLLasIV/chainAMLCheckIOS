@@ -26,7 +26,7 @@ struct GoPlusProvider: RiskProvider {
     
     func check(address: String, chain: Chain) async throws -> RiskCheck {
         var components = URLComponents(string: "https://api.gopluslabs.io/api/v1/address_security/\(address)")
-        components?.queryItems = [URLQueryItem(name: "chain_id", value: String(chain.evmChainId))]
+        components?.queryItems = [URLQueryItem(name: "chain_id", value: chain.goplusChainId)]
         guard let url = components?.url else { throw NetworkError.badURL }
         
         let response: GoPlusResponse = try await client.get(url)
@@ -84,9 +84,4 @@ private enum LooseValue: Decodable {
     }
     
     var isTrue: Bool { (intValue ?? 0) > 0 }
-    
-    var text: String? {
-        if case .string(let s) = self { return s }
-        return nil
-    }
 }

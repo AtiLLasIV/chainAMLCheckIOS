@@ -24,4 +24,20 @@ final class InputViewModel {
         errorMessage = nil
     }
     
+    struct Example: Identifiable {
+        let title: String
+        let address: String
+        var id: String { address }
+    }
+
+    var examples: [Example] {
+        switch chain {
+        case .ethereum:
+            [Example(title: "vitalik.eth", address: "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"),
+             Example(title: "Ronin exploiter (Lazarus)", address: "0x098B716B8Aaf21512996dC57EB0615e2383E2f96")]
+        case .tron:
+            [Example(title: "Контракт USDT (TRC-20)", address: "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t")]
+        }
+    }
+    
 }

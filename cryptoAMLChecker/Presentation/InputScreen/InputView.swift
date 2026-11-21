@@ -13,7 +13,7 @@ struct InputView: View {
                         }
                     }
                     
-                    TextField("0x...", text: $viewModel.addressText, axis: .vertical)
+                    TextField(viewModel.chain.addressPlaceholder, text: $viewModel.addressText, axis: .vertical)
                         .font(.system(.body, design: .monospaced))
                         .lineLimit(2...3)
                         .textInputAutocapitalization(.never)
@@ -40,15 +40,13 @@ struct InputView: View {
                 }
                 
                 Section("Примеры") {
-                    Button("vitalik.eth") {
-                        viewModel.fillExample("0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045")
-                    }
-                    Button("Ronin exploiter (Lazarus)") {
-                        viewModel.fillExample("0x098B716B8Aaf21512996dC57EB0615e2383E2f96")
+                    ForEach(viewModel.examples) { example in
+                        Button(example.title) {
+                            viewModel.fillExample(example.address)
+                        }
                     }
                 }
             }
-            .navigationTitle("AML Checker")
             .navigationDestination(item: $viewModel.request) { request in
                 ResultView(request: request)
             }

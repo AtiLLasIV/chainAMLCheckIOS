@@ -15,6 +15,23 @@ struct ResultView: View {
                     .font(.system(.footnote, design: .monospaced))
                     .textSelection(.enabled)
             }
+            
+            Section("Баланс кошелька") {
+                switch viewModel.balanceState {
+                case .loading:
+                    ProgressView()
+                case .failed(let message):
+                    Label(message, systemImage: "wifi.exclamationmark")
+                        .foregroundStyle(.secondary)
+                case .loaded(let balance):
+                    Text("\(balance.amount.formatted(.number.precision(.fractionLength(0...6)))) \(viewModel.request.chain.symbol)")
+                        .font(.title3.monospacedDigit())
+                    if let usd = balance.usdValue {
+                        Text(usd, format: .currency(code: "USD"))
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
 
             ForEach(viewModel.rows) { row in
                 Section(row.id) {

@@ -16,13 +16,6 @@ final class ResultViewModel {
             }
             return nil
         }
-        
-        var isLoading: Bool {
-            if case .loading = self {
-                return true
-            }
-            return false
-        }
     }
     
     
@@ -31,13 +24,28 @@ final class ResultViewModel {
         var state: ProviderState
     }
     
+    enum BalanceState {
+        case loading
+        case loaded(Balance)
+        case failed(String)
+    }
+
+    private(set) var balanceState: BalanceState = .loading
+    private let balanceProvider: BalanceProvider
+    private let priceProvider: PriceProvider
+    
     let request: CheckRequest
     private let providers: [RiskProvider]
     private(set) var rows: [ProviderRow]
     
-    init(request: CheckRequest, providers: [RiskProvider] = [GoPlusProvider()]) {
+    init(request: CheckRequest,
+         providers: [RiskProvider] = [GoPlusProvider(), TRMSanctionsProvider()],
+         balanceProvider: BalanceProvider = MultiChainBalanceProvider(),
+         priceProvider: PriceProvider = CoinGeckoPriceProvider()) {
         self.request = request
         self.providers = providers
+        self.balanceProvider = balanceProvider
+        self.priceProvider = priceProvider
         self.rows = providers.map { ProviderRow(id: $0.name, state: .loading) }
     }
     
@@ -45,11 +53,14 @@ final class ResultViewModel {
         rows.compactMap(\.state.check).map(\.level).max()
     }
     
-    var isLoading: Bool {
-        rows.contains { $0.state.isLoading }
+    func load() async {
+        async let risks: Void = loadRisks()
+        async let balance: Void = loadBalance()
+        await risks
+        await balance
     }
     
-    func load() async {
+    private func loadRisks() async {
         for index in rows.indices {
             rows[index].state = .loading
         }
@@ -74,4 +85,14 @@ final class ResultViewModel {
         }
     }
     
+    private func loadBalance() async {
+        balanceState = .loading
+        do {
+            let amount = try await balanceProvider.balance(address: request.address, chain: request.chain)
+            let price = try? await priceProvider.usdPrice(for: request.chain)
+            balanceState = .loaded(Balance(amount: amount, usdValue: price.map { $0 * amount }))
+        } catch {
+            balanceState = .failed(error.localizedDescription)
+        }
+    }
 }

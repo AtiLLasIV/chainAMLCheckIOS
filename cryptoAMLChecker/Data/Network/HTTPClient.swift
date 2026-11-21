@@ -20,7 +20,19 @@ struct HTTPClient {
     var session: URLSession = .shared
     
     func get<T: Decodable>(_ url: URL) async throws -> T {
-        let (data, response) = try await session.data(from: url)
+        try await send(URLRequest(url: url))
+    }
+    
+    func post<Body: Encodable, T: Decodable>(_ url: URL, body: Body) async throws -> T {
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try JSONEncoder().encode(body)
+        return try await send(request)
+    }
+    
+    private func send<T: Decodable>(_ request: URLRequest) async throws -> T {
+        let (data, response) = try await session.data(for: request)
         
         guard let http = response as? HTTPURLResponse else {
             throw NetworkError.badStatus(-1)
